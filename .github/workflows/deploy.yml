@@ -10,8 +10,8 @@ jobs:
   test:
     env: 
       MONGODB_CLUSTER_ADDRESS: gitcty-mongodb-learn.0sclkd3.mongodb.net
-      MONGODB_PASSWORD: 5Zzg6rARUSw1Ah6X
-      MONGODB_USERNAME: gitcty
+      MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
+      MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
       PORT: 8080
     runs-on: ubuntu-latest
     steps:
