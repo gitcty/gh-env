@@ -8,6 +8,7 @@ env:
   MONGODB_DB_NAME: gha-demo
 jobs:
   test:
+    environment: dev
     env: 
       MONGODB_CLUSTER_ADDRESS: gitcty-mongodb-learn.0sclkd3.mongodb.net
       MONGODB_PASSWORD: ${{ secrets.MONGODB_PASSWORD }}
